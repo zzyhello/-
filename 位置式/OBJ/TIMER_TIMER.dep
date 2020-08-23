@@ -1,5 +1,5 @@
 Dependencies for Project 'TIMER', Target 'TIMER': (DO NOT MODIFY !)
-F (.\main.c)(0x5F412DF4)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I ..\HARDWARE\LED -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\USER -I ..\STM32F10x_FWLib\inc -I ..\CORE -I ..\HARDWARE\KEY -I ..\HARDWARE\TIMER -I ..\HARDWARE\LCD -I ..\HARDWARE\ENCODER -I ..\USMART -I ..\HARDWARE\PID -I ..\HARDWARE\24CXX -I ..\HARDWARE\IIC -I ..\HARDWARE\FUNCTION -I ..\HARDWARE\TOUCH -I ..\HARDWARE\LCDTOUCH-I.\RTE\_TIMER-I"E:\keil 5\ARM\PACK\Keil\STM32F1xx_DFP\1.0.5\Device\Include"-I"E:\keil 5\ARM\CMSIS\Include"-D__UVISION_VERSION="524" -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER-o ..\obj\main.o --omf_browse ..\obj\main.crf --depend ..\obj\main.d)
+F (.\main.c)(0x5F420270)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I ..\HARDWARE\LED -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\USER -I ..\STM32F10x_FWLib\inc -I ..\CORE -I ..\HARDWARE\KEY -I ..\HARDWARE\TIMER -I ..\HARDWARE\LCD -I ..\HARDWARE\ENCODER -I ..\USMART -I ..\HARDWARE\PID -I ..\HARDWARE\24CXX -I ..\HARDWARE\IIC -I ..\HARDWARE\FUNCTION -I ..\HARDWARE\TOUCH -I ..\HARDWARE\LCDTOUCH-I.\RTE\_TIMER-I"E:\keil 5\ARM\PACK\Keil\STM32F1xx_DFP\1.0.5\Device\Include"-I"E:\keil 5\ARM\CMSIS\Include"-D__UVISION_VERSION="524" -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER-o ..\obj\main.o --omf_browse ..\obj\main.crf --depend ..\obj\main.d)
 I (main.h)(0x5F3FDAE5)
 I (..\HARDWARE\LED\led.h)(0x50513ABC)
 I (..\SYSTEM\sys\sys.h)(0x550F951B)
@@ -38,7 +38,7 @@ I (E:\keil 5\ARM\ARMCC\include\stdio.h)(0x588B8344)
 I (..\HARDWARE\TIMER\timer.h)(0x5F3E616B)
 I (..\HARDWARE\LCD\lcd.h)(0x5F38AEC6)
 I (E:\keil 5\ARM\ARMCC\include\stdlib.h)(0x588B8344)
-I (..\HARDWARE\ENCODER\encode.h)(0x5F3DEFDB)
+I (..\HARDWARE\ENCODER\encode.h)(0x5F42041B)
 I (..\USMART\usmart.h)(0x5F3DEE4A)
 I (..\USMART\usmart_str.h)(0x5501A38D)
 I (..\HARDWARE\PID\pid.h)(0x5F409BB5)
@@ -50,7 +50,7 @@ I (..\HARDWARE\TOUCH\gt9147.h)(0x5510EA77)
 I (..\HARDWARE\TOUCH\ft5206.h)(0x54B7ACCD)
 I (..\HARDWARE\LCDTOUCH\lcdtouch.h)(0x5F40D860)
 I (..\USER\main.h)(0x5F3FDAE5)
-I (..\HARDWARE\FUNCTION\function.h)(0x5F412140)
+I (..\HARDWARE\FUNCTION\function.h)(0x5F4203AB)
 F (.\stm32f10x_it.c)(0x4EBEACB0)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I ..\HARDWARE\LED -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\USER -I ..\STM32F10x_FWLib\inc -I ..\CORE -I ..\HARDWARE\KEY -I ..\HARDWARE\TIMER -I ..\HARDWARE\LCD -I ..\HARDWARE\ENCODER -I ..\USMART -I ..\HARDWARE\PID -I ..\HARDWARE\24CXX -I ..\HARDWARE\IIC -I ..\HARDWARE\FUNCTION -I ..\HARDWARE\TOUCH -I ..\HARDWARE\LCDTOUCH-I.\RTE\_TIMER-I"E:\keil 5\ARM\PACK\Keil\STM32F1xx_DFP\1.0.5\Device\Include"-I"E:\keil 5\ARM\CMSIS\Include"-D__UVISION_VERSION="524" -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER-o ..\obj\stm32f10x_it.o --omf_browse ..\obj\stm32f10x_it.crf --depend ..\obj\stm32f10x_it.d)
 I (stm32f10x_it.h)(0x4D99A426)
 I (stm32f10x.h)(0x4D783CB4)
@@ -175,7 +175,7 @@ I (..\STM32F10x_FWLib\inc\misc.h)(0x504ED09C)
 I (..\HARDWARE\KEY\key.h)(0x550A8567)
 I (..\SYSTEM\sys\sys.h)(0x550F951B)
 I (..\SYSTEM\delay\delay.h)(0x555AC82B)
-F (..\HARDWARE\TIMER\timer.c)(0x5F3E6371)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I ..\HARDWARE\LED -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\USER -I ..\STM32F10x_FWLib\inc -I ..\CORE -I ..\HARDWARE\KEY -I ..\HARDWARE\TIMER -I ..\HARDWARE\LCD -I ..\HARDWARE\ENCODER -I ..\USMART -I ..\HARDWARE\PID -I ..\HARDWARE\24CXX -I ..\HARDWARE\IIC -I ..\HARDWARE\FUNCTION -I ..\HARDWARE\TOUCH -I ..\HARDWARE\LCDTOUCH-I.\RTE\_TIMER-I"E:\keil 5\ARM\PACK\Keil\STM32F1xx_DFP\1.0.5\Device\Include"-I"E:\keil 5\ARM\CMSIS\Include"-D__UVISION_VERSION="524" -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER-o ..\obj\timer.o --omf_browse ..\obj\timer.crf --depend ..\obj\timer.d)
+F (..\HARDWARE\TIMER\timer.c)(0x5F420314)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I ..\HARDWARE\LED -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\USER -I ..\STM32F10x_FWLib\inc -I ..\CORE -I ..\HARDWARE\KEY -I ..\HARDWARE\TIMER -I ..\HARDWARE\LCD -I ..\HARDWARE\ENCODER -I ..\USMART -I ..\HARDWARE\PID -I ..\HARDWARE\24CXX -I ..\HARDWARE\IIC -I ..\HARDWARE\FUNCTION -I ..\HARDWARE\TOUCH -I ..\HARDWARE\LCDTOUCH-I.\RTE\_TIMER-I"E:\keil 5\ARM\PACK\Keil\STM32F1xx_DFP\1.0.5\Device\Include"-I"E:\keil 5\ARM\CMSIS\Include"-D__UVISION_VERSION="524" -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER-o ..\obj\timer.o --omf_browse ..\obj\timer.crf --depend ..\obj\timer.d)
 I (..\HARDWARE\TIMER\timer.h)(0x5F3E616B)
 I (..\SYSTEM\sys\sys.h)(0x550F951B)
 I (..\USER\stm32f10x.h)(0x4D783CB4)
@@ -243,8 +243,8 @@ I (..\HARDWARE\LCD\font.h)(0x5F38AF30)
 I (..\SYSTEM\usart\usart.h)(0x50517A82)
 I (E:\keil 5\ARM\ARMCC\include\stdio.h)(0x588B8344)
 I (..\SYSTEM\delay\delay.h)(0x555AC82B)
-F (..\HARDWARE\ENCODER\encoder.c)(0x5F40732C)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I ..\HARDWARE\LED -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\USER -I ..\STM32F10x_FWLib\inc -I ..\CORE -I ..\HARDWARE\KEY -I ..\HARDWARE\TIMER -I ..\HARDWARE\LCD -I ..\HARDWARE\ENCODER -I ..\USMART -I ..\HARDWARE\PID -I ..\HARDWARE\24CXX -I ..\HARDWARE\IIC -I ..\HARDWARE\FUNCTION -I ..\HARDWARE\TOUCH -I ..\HARDWARE\LCDTOUCH-I.\RTE\_TIMER-I"E:\keil 5\ARM\PACK\Keil\STM32F1xx_DFP\1.0.5\Device\Include"-I"E:\keil 5\ARM\CMSIS\Include"-D__UVISION_VERSION="524" -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER-o ..\obj\encoder.o --omf_browse ..\obj\encoder.crf --depend ..\obj\encoder.d)
-I (..\HARDWARE\ENCODER\encode.h)(0x5F3DEFDB)
+F (..\HARDWARE\ENCODER\encoder.c)(0x5F42032E)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I ..\HARDWARE\LED -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\USER -I ..\STM32F10x_FWLib\inc -I ..\CORE -I ..\HARDWARE\KEY -I ..\HARDWARE\TIMER -I ..\HARDWARE\LCD -I ..\HARDWARE\ENCODER -I ..\USMART -I ..\HARDWARE\PID -I ..\HARDWARE\24CXX -I ..\HARDWARE\IIC -I ..\HARDWARE\FUNCTION -I ..\HARDWARE\TOUCH -I ..\HARDWARE\LCDTOUCH-I.\RTE\_TIMER-I"E:\keil 5\ARM\PACK\Keil\STM32F1xx_DFP\1.0.5\Device\Include"-I"E:\keil 5\ARM\CMSIS\Include"-D__UVISION_VERSION="524" -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER-o ..\obj\encoder.o --omf_browse ..\obj\encoder.crf --depend ..\obj\encoder.d)
+I (..\HARDWARE\ENCODER\encode.h)(0x5F42041B)
 I (..\SYSTEM\sys\sys.h)(0x550F951B)
 I (..\USER\stm32f10x.h)(0x4D783CB4)
 I (..\CORE\core_cm3.h)(0x4D523B58)
@@ -274,7 +274,7 @@ I (..\STM32F10x_FWLib\inc\stm32f10x_tim.h)(0x4D783BB4)
 I (..\STM32F10x_FWLib\inc\stm32f10x_usart.h)(0x4D783BB4)
 I (..\STM32F10x_FWLib\inc\stm32f10x_wwdg.h)(0x4D783BB4)
 I (..\STM32F10x_FWLib\inc\misc.h)(0x504ED09C)
-F (..\HARDWARE\PID\pid.c)(0x5F409BB5)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I ..\HARDWARE\LED -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\USER -I ..\STM32F10x_FWLib\inc -I ..\CORE -I ..\HARDWARE\KEY -I ..\HARDWARE\TIMER -I ..\HARDWARE\LCD -I ..\HARDWARE\ENCODER -I ..\USMART -I ..\HARDWARE\PID -I ..\HARDWARE\24CXX -I ..\HARDWARE\IIC -I ..\HARDWARE\FUNCTION -I ..\HARDWARE\TOUCH -I ..\HARDWARE\LCDTOUCH-I.\RTE\_TIMER-I"E:\keil 5\ARM\PACK\Keil\STM32F1xx_DFP\1.0.5\Device\Include"-I"E:\keil 5\ARM\CMSIS\Include"-D__UVISION_VERSION="524" -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER-o ..\obj\pid.o --omf_browse ..\obj\pid.crf --depend ..\obj\pid.d)
+F (..\HARDWARE\PID\pid.c)(0x5F420354)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I ..\HARDWARE\LED -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\USER -I ..\STM32F10x_FWLib\inc -I ..\CORE -I ..\HARDWARE\KEY -I ..\HARDWARE\TIMER -I ..\HARDWARE\LCD -I ..\HARDWARE\ENCODER -I ..\USMART -I ..\HARDWARE\PID -I ..\HARDWARE\24CXX -I ..\HARDWARE\IIC -I ..\HARDWARE\FUNCTION -I ..\HARDWARE\TOUCH -I ..\HARDWARE\LCDTOUCH-I.\RTE\_TIMER-I"E:\keil 5\ARM\PACK\Keil\STM32F1xx_DFP\1.0.5\Device\Include"-I"E:\keil 5\ARM\CMSIS\Include"-D__UVISION_VERSION="524" -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER-o ..\obj\pid.o --omf_browse ..\obj\pid.crf --depend ..\obj\pid.d)
 I (..\HARDWARE\PID\pid.h)(0x5F409BB5)
 I (..\SYSTEM\sys\sys.h)(0x550F951B)
 I (..\USER\stm32f10x.h)(0x4D783CB4)
@@ -372,8 +372,8 @@ I (..\STM32F10x_FWLib\inc\stm32f10x_usart.h)(0x4D783BB4)
 I (..\STM32F10x_FWLib\inc\stm32f10x_wwdg.h)(0x4D783BB4)
 I (..\STM32F10x_FWLib\inc\misc.h)(0x504ED09C)
 I (..\SYSTEM\delay\delay.h)(0x555AC82B)
-F (..\HARDWARE\FUNCTION\function.c)(0x5F412E36)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I ..\HARDWARE\LED -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\USER -I ..\STM32F10x_FWLib\inc -I ..\CORE -I ..\HARDWARE\KEY -I ..\HARDWARE\TIMER -I ..\HARDWARE\LCD -I ..\HARDWARE\ENCODER -I ..\USMART -I ..\HARDWARE\PID -I ..\HARDWARE\24CXX -I ..\HARDWARE\IIC -I ..\HARDWARE\FUNCTION -I ..\HARDWARE\TOUCH -I ..\HARDWARE\LCDTOUCH-I.\RTE\_TIMER-I"E:\keil 5\ARM\PACK\Keil\STM32F1xx_DFP\1.0.5\Device\Include"-I"E:\keil 5\ARM\CMSIS\Include"-D__UVISION_VERSION="524" -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER-o ..\obj\function.o --omf_browse ..\obj\function.crf --depend ..\obj\function.d)
-I (..\HARDWARE\FUNCTION\function.h)(0x5F412140)
+F (..\HARDWARE\FUNCTION\function.c)(0x5F420370)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I ..\HARDWARE\LED -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\USER -I ..\STM32F10x_FWLib\inc -I ..\CORE -I ..\HARDWARE\KEY -I ..\HARDWARE\TIMER -I ..\HARDWARE\LCD -I ..\HARDWARE\ENCODER -I ..\USMART -I ..\HARDWARE\PID -I ..\HARDWARE\24CXX -I ..\HARDWARE\IIC -I ..\HARDWARE\FUNCTION -I ..\HARDWARE\TOUCH -I ..\HARDWARE\LCDTOUCH-I.\RTE\_TIMER-I"E:\keil 5\ARM\PACK\Keil\STM32F1xx_DFP\1.0.5\Device\Include"-I"E:\keil 5\ARM\CMSIS\Include"-D__UVISION_VERSION="524" -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER-o ..\obj\function.o --omf_browse ..\obj\function.crf --depend ..\obj\function.d)
+I (..\HARDWARE\FUNCTION\function.h)(0x5F4203AB)
 I (..\HARDWARE\PID\pid.h)(0x5F409BB5)
 I (..\SYSTEM\sys\sys.h)(0x550F951B)
 I (..\USER\stm32f10x.h)(0x4D783CB4)
@@ -415,7 +415,7 @@ I (..\USER\main.h)(0x5F3FDAE5)
 I (..\HARDWARE\LED\led.h)(0x50513ABC)
 I (..\HARDWARE\KEY\key.h)(0x550A8567)
 I (..\HARDWARE\TIMER\timer.h)(0x5F3E616B)
-I (..\HARDWARE\ENCODER\encode.h)(0x5F3DEFDB)
+I (..\HARDWARE\ENCODER\encode.h)(0x5F42041B)
 I (..\USMART\usmart.h)(0x5F3DEE4A)
 I (..\USMART\usmart_str.h)(0x5501A38D)
 I (..\HARDWARE\TOUCH\touch.h)(0x54FBCB5B)
@@ -613,7 +613,7 @@ I (..\HARDWARE\TOUCH\ctiic.h)(0x54B7ACCD)
 I (..\SYSTEM\usart\usart.h)(0x50517A82)
 I (E:\keil 5\ARM\ARMCC\include\stdio.h)(0x588B8344)
 I (..\SYSTEM\delay\delay.h)(0x555AC82B)
-F (..\HARDWARE\LCDTOUCH\lcdtouch.c)(0x5F412177)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I ..\HARDWARE\LED -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\USER -I ..\STM32F10x_FWLib\inc -I ..\CORE -I ..\HARDWARE\KEY -I ..\HARDWARE\TIMER -I ..\HARDWARE\LCD -I ..\HARDWARE\ENCODER -I ..\USMART -I ..\HARDWARE\PID -I ..\HARDWARE\24CXX -I ..\HARDWARE\IIC -I ..\HARDWARE\FUNCTION -I ..\HARDWARE\TOUCH -I ..\HARDWARE\LCDTOUCH-I.\RTE\_TIMER-I"E:\keil 5\ARM\PACK\Keil\STM32F1xx_DFP\1.0.5\Device\Include"-I"E:\keil 5\ARM\CMSIS\Include"-D__UVISION_VERSION="524" -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER-o ..\obj\lcdtouch.o --omf_browse ..\obj\lcdtouch.crf --depend ..\obj\lcdtouch.d)
+F (..\HARDWARE\LCDTOUCH\lcdtouch.c)(0x5F4203CB)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I ..\HARDWARE\LED -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\USER -I ..\STM32F10x_FWLib\inc -I ..\CORE -I ..\HARDWARE\KEY -I ..\HARDWARE\TIMER -I ..\HARDWARE\LCD -I ..\HARDWARE\ENCODER -I ..\USMART -I ..\HARDWARE\PID -I ..\HARDWARE\24CXX -I ..\HARDWARE\IIC -I ..\HARDWARE\FUNCTION -I ..\HARDWARE\TOUCH -I ..\HARDWARE\LCDTOUCH-I.\RTE\_TIMER-I"E:\keil 5\ARM\PACK\Keil\STM32F1xx_DFP\1.0.5\Device\Include"-I"E:\keil 5\ARM\CMSIS\Include"-D__UVISION_VERSION="524" -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER-o ..\obj\lcdtouch.o --omf_browse ..\obj\lcdtouch.crf --depend ..\obj\lcdtouch.d)
 I (..\HARDWARE\LCDTOUCH\lcdtouch.h)(0x5F40D860)
 I (..\USER\main.h)(0x5F3FDAE5)
 I (..\HARDWARE\LED\led.h)(0x50513ABC)
@@ -653,7 +653,7 @@ I (E:\keil 5\ARM\ARMCC\include\stdio.h)(0x588B8344)
 I (..\HARDWARE\TIMER\timer.h)(0x5F3E616B)
 I (..\HARDWARE\LCD\lcd.h)(0x5F38AEC6)
 I (E:\keil 5\ARM\ARMCC\include\stdlib.h)(0x588B8344)
-I (..\HARDWARE\ENCODER\encode.h)(0x5F3DEFDB)
+I (..\HARDWARE\ENCODER\encode.h)(0x5F42041B)
 I (..\USMART\usmart.h)(0x5F3DEE4A)
 I (..\USMART\usmart_str.h)(0x5501A38D)
 I (..\HARDWARE\PID\pid.h)(0x5F409BB5)
@@ -663,7 +663,7 @@ I (..\HARDWARE\TOUCH\touch.h)(0x54FBCB5B)
 I (..\HARDWARE\TOUCH\ott2001a.h)(0x54B7AE0D)
 I (..\HARDWARE\TOUCH\gt9147.h)(0x5510EA77)
 I (..\HARDWARE\TOUCH\ft5206.h)(0x54B7ACCD)
-I (..\HARDWARE\FUNCTION\function.h)(0x5F412140)
+I (..\HARDWARE\FUNCTION\function.h)(0x5F4203AB)
 F (..\SYSTEM\delay\delay.c)(0x555AC82A)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I ..\HARDWARE\LED -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\USER -I ..\STM32F10x_FWLib\inc -I ..\CORE -I ..\HARDWARE\KEY -I ..\HARDWARE\TIMER -I ..\HARDWARE\LCD -I ..\HARDWARE\ENCODER -I ..\USMART -I ..\HARDWARE\PID -I ..\HARDWARE\24CXX -I ..\HARDWARE\IIC -I ..\HARDWARE\FUNCTION -I ..\HARDWARE\TOUCH -I ..\HARDWARE\LCDTOUCH-I.\RTE\_TIMER-I"E:\keil 5\ARM\PACK\Keil\STM32F1xx_DFP\1.0.5\Device\Include"-I"E:\keil 5\ARM\CMSIS\Include"-D__UVISION_VERSION="524" -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER-o ..\obj\delay.o --omf_browse ..\obj\delay.crf --depend ..\obj\delay.d)
 I (..\SYSTEM\delay\delay.h)(0x555AC82B)
 I (..\SYSTEM\sys\sys.h)(0x550F951B)
@@ -934,7 +934,7 @@ I (..\STM32F10x_FWLib\inc\stm32f10x_tim.h)(0x4D783BB4)
 I (..\STM32F10x_FWLib\inc\stm32f10x_usart.h)(0x4D783BB4)
 I (..\STM32F10x_FWLib\inc\stm32f10x_wwdg.h)(0x4D783BB4)
 I (..\STM32F10x_FWLib\inc\misc.h)(0x504ED09C)
-F (..\README.TXT)(0x55101039)()
+F (..\README.TXT)(0x00000000)()
 F (..\USMART\usmart.c)(0x5F40732C)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I ..\HARDWARE\LED -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\USER -I ..\STM32F10x_FWLib\inc -I ..\CORE -I ..\HARDWARE\KEY -I ..\HARDWARE\TIMER -I ..\HARDWARE\LCD -I ..\HARDWARE\ENCODER -I ..\USMART -I ..\HARDWARE\PID -I ..\HARDWARE\24CXX -I ..\HARDWARE\IIC -I ..\HARDWARE\FUNCTION -I ..\HARDWARE\TOUCH -I ..\HARDWARE\LCDTOUCH-I.\RTE\_TIMER-I"E:\keil 5\ARM\PACK\Keil\STM32F1xx_DFP\1.0.5\Device\Include"-I"E:\keil 5\ARM\CMSIS\Include"-D__UVISION_VERSION="524" -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER-o ..\obj\usmart.o --omf_browse ..\obj\usmart.crf --depend ..\obj\usmart.d)
 I (..\USMART\usmart.h)(0x5F3DEE4A)
 I (..\USMART\usmart_str.h)(0x5501A38D)
@@ -969,8 +969,8 @@ I (..\STM32F10x_FWLib\inc\misc.h)(0x504ED09C)
 I (..\SYSTEM\usart\usart.h)(0x50517A82)
 I (E:\keil 5\ARM\ARMCC\include\stdio.h)(0x588B8344)
 I (..\SYSTEM\sys\sys.h)(0x550F951B)
-I (..\HARDWARE\ENCODER\encode.h)(0x5F3DEFDB)
-F (..\USMART\usmart_config.c)(0x5F412140)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I ..\HARDWARE\LED -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\USER -I ..\STM32F10x_FWLib\inc -I ..\CORE -I ..\HARDWARE\KEY -I ..\HARDWARE\TIMER -I ..\HARDWARE\LCD -I ..\HARDWARE\ENCODER -I ..\USMART -I ..\HARDWARE\PID -I ..\HARDWARE\24CXX -I ..\HARDWARE\IIC -I ..\HARDWARE\FUNCTION -I ..\HARDWARE\TOUCH -I ..\HARDWARE\LCDTOUCH-I.\RTE\_TIMER-I"E:\keil 5\ARM\PACK\Keil\STM32F1xx_DFP\1.0.5\Device\Include"-I"E:\keil 5\ARM\CMSIS\Include"-D__UVISION_VERSION="524" -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER-o ..\obj\usmart_config.o --omf_browse ..\obj\usmart_config.crf --depend ..\obj\usmart_config.d)
+I (..\HARDWARE\ENCODER\encode.h)(0x5F42041B)
+F (..\USMART\usmart_config.c)(0x5F4202CB)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I ..\HARDWARE\LED -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\USER -I ..\STM32F10x_FWLib\inc -I ..\CORE -I ..\HARDWARE\KEY -I ..\HARDWARE\TIMER -I ..\HARDWARE\LCD -I ..\HARDWARE\ENCODER -I ..\USMART -I ..\HARDWARE\PID -I ..\HARDWARE\24CXX -I ..\HARDWARE\IIC -I ..\HARDWARE\FUNCTION -I ..\HARDWARE\TOUCH -I ..\HARDWARE\LCDTOUCH-I.\RTE\_TIMER-I"E:\keil 5\ARM\PACK\Keil\STM32F1xx_DFP\1.0.5\Device\Include"-I"E:\keil 5\ARM\CMSIS\Include"-D__UVISION_VERSION="524" -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER-o ..\obj\usmart_config.o --omf_browse ..\obj\usmart_config.crf --depend ..\obj\usmart_config.d)
 I (..\USMART\usmart.h)(0x5F3DEE4A)
 I (..\USMART\usmart_str.h)(0x5501A38D)
 I (..\USER\stm32f10x.h)(0x4D783CB4)
@@ -1005,7 +1005,7 @@ I (..\SYSTEM\delay\delay.h)(0x555AC82B)
 I (..\SYSTEM\sys\sys.h)(0x550F951B)
 I (..\HARDWARE\LCD\lcd.h)(0x5F38AEC6)
 I (E:\keil 5\ARM\ARMCC\include\stdlib.h)(0x588B8344)
-I (..\HARDWARE\FUNCTION\function.h)(0x5F412140)
+I (..\HARDWARE\FUNCTION\function.h)(0x5F4203AB)
 I (..\HARDWARE\PID\pid.h)(0x5F409BB5)
 I (..\SYSTEM\usart\usart.h)(0x50517A82)
 I (E:\keil 5\ARM\ARMCC\include\stdio.h)(0x588B8344)
@@ -1015,7 +1015,7 @@ I (..\USER\main.h)(0x5F3FDAE5)
 I (..\HARDWARE\LED\led.h)(0x50513ABC)
 I (..\HARDWARE\KEY\key.h)(0x550A8567)
 I (..\HARDWARE\TIMER\timer.h)(0x5F3E616B)
-I (..\HARDWARE\ENCODER\encode.h)(0x5F3DEFDB)
+I (..\HARDWARE\ENCODER\encode.h)(0x5F42041B)
 I (..\HARDWARE\TOUCH\touch.h)(0x54FBCB5B)
 I (..\HARDWARE\TOUCH\ott2001a.h)(0x54B7AE0D)
 I (..\HARDWARE\TOUCH\gt9147.h)(0x5510EA77)

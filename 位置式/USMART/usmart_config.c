@@ -19,7 +19,7 @@ struct _m_usmart_nametab usmart_nametab[]=
 	(void*)read_addr,"u32 read_addr(u32 addr)",
 	(void*)write_addr,"void write_addr(u32 addr,u32 val)",	 
 #endif
-	(void*)delay_ms,"void delay_ms(u16 nms)",
+/*	(void*)delay_ms,"void delay_ms(u16 nms)",
 	(void*)delay_us,"void delay_us(u32 nus)",	
 	(void*)LCD_Clear,"void LCD_Clear(u16 Color)",
 	(void*)LCD_Fill,"void LCD_Fill(u16 xsta,u16 ysta,u16 xend,u16 yend,u16 color)",
@@ -28,17 +28,18 @@ struct _m_usmart_nametab usmart_nametab[]=
 	(void*)LCD_Draw_Circle,"void Draw_Circle(u16 x0,u16 y0,u8 r)",
 	(void*)LCD_ShowNum,"void LCD_ShowNum(u16 x,u16 y,u32 num,u8 len,u8 size)",
 	(void*)LCD_ShowString,"void LCD_ShowString(u16 x,u16 y,u16 width,u16 height,u8 size,u8 *p)",
+	*/
 //	(void*)led_set,"void led_set(u8 sta)",
 //	(void*)test_fun,"void test_fun(void(*ledset)(u8),u8 sta)",				  	    
 	(void*)LCD_ReadPoint,"u16 LCD_ReadPoint(u16 x,u16 y)",
 		
 	//(void*)SetCycleNum,"void SetCycleNum(u8 CycleNum,u8 IsStorage)",
-	(void*)SetCycleNum,"void SetCycleNum(u8 CycleNum)",
-	(void*)SetDirection,"void SetDirection(u8 dir)",
-	(void*)SetPNum,"void SetPNum(u16 ParaNum,u8 count)",
-	(void*)SetINum,"void SetINum(u16 ParaNum,u8 count)",
-	(void*)SetDNum,"void SetDNum(u16 ParaNum,u8 count)",
-	(void*)ReadParameter,"void ReadParameter(u8 YoN)",
+	(void*)SetCycleNum,"void SetCycleNum(u8 CycleNum)",        //设定速度
+	(void*)SetDirection,"void SetDirection(u8 dir)",					 //设定方向
+	(void*)SetPNum,"void SetPNum(u16 ParaNum,u8 count)",			 //设定P参数   设置的参数 = ParaNum * 0.1的count次方
+	(void*)SetINum,"void SetINum(u16 ParaNum,u8 count)",			 //设定I参数
+	(void*)SetDNum,"void SetDNum(u16 ParaNum,u8 count)",			 //设定D参数
+	(void*)ReadParameter,"void ReadParameter(u8 YoN)", 				 //读取掉电保存的参数
 };						  
 ///////////////////////////////////END///////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////////////

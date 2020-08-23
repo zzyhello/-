@@ -2,8 +2,8 @@
 #include "encode.h"
 #define _ENCODE_C
 
-u16 CaptureNumberA = 0;
-u16 CaptureNumberB = 0;
+u16 CaptureNumberA = 0;				//A 脉冲捕获值    
+u16 CaptureNumberB = 0;				//B 脉冲捕获值
 
 
 //定时器5通道2输入捕获配置   PA1

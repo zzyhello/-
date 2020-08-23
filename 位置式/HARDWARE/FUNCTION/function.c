@@ -6,7 +6,7 @@
 	 u8 dataImap[1];
 	 u8 dataDmap[1];
 
-void ReadParameter(u8 YoN)
+void ReadParameter(u8 YoN)				////读取掉电保存的参数 1：读取  其它：不读取
 {
 	if(YoN == 1)
 	{
@@ -29,7 +29,7 @@ void ReadParameter(u8 YoN)
 		}
 	}
 }
-void SetDirection(u8 dir)
+void SetDirection(u8 dir)					//设置方向  1:顺时针  2:逆时针
 {
 	if(dir==1)
 	{
@@ -40,7 +40,7 @@ void SetDirection(u8 dir)
 		anticlockwise();
 	}
 }
-void SetPNum(u16 ParaNum,u8 count)
+void SetPNum(u16 ParaNum,u8 count)        	//设置P参数    设置的参数 = ParaNum * 0.1的count次方
 {
 	u8 CurP_Buffer[1];
 	double Num = 0;
@@ -74,7 +74,7 @@ void SetPNum(u16 ParaNum,u8 count)
 	LCD_ShowxNum(70,500,((double)dataPmap[0])/10,1,24,0);
 	LCD_ShowxNum(90,500,(u8)((double)dataPmap[0])%10,1,24,0);
 }
-void SetINum(u16 ParaNum,u8 count)
+void SetINum(u16 ParaNum,u8 count)				//设置I参数
 {
 	u8 CurI_Buffer[1];
 		double Num = 0;
@@ -108,7 +108,7 @@ void SetINum(u16 ParaNum,u8 count)
 	LCD_ShowxNum(70,540,((double)dataImap[0])/10,1,24,0);
 	LCD_ShowxNum(90,540,(u8)((double)dataImap[0])%10,1,24,0);
 }
-void SetDNum(u16 ParaNum,u8 count)
+void SetDNum(u16 ParaNum,u8 count)					//设置D参数
 {
 	u8 CurD_Buffer[1];
 		double Num = 0;
@@ -142,7 +142,7 @@ void SetDNum(u16 ParaNum,u8 count)
 	LCD_ShowxNum(70,580,((double)dataDmap[0])/10,1,24,0);
 	LCD_ShowxNum(90,580,(u8)((double)dataDmap[0])%10,1,24,0);
 }
-void SetCycleNum(int CycleNum)
+void SetCycleNum(int CycleNum)						//设置转速
 {
 	u8 CurSpeed_Buffer[1];
 	u16 SetPoint ;

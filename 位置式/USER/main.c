@@ -5,7 +5,6 @@ double CycleNumber = 0;
 
 /* 私有变量 ------------------------------------------------------------------*/
 uint16_t time_count=0;        // 时间计数，每20ms增加一
-//uint32_t CaptureNumber=0;     // 输入捕获数
 uint8_t  start_flag=0;
 uint8_t  start_flagB=0;
 uint8_t  start_flagA=0;
@@ -47,12 +46,12 @@ TIM_OCInitTypeDef TIM_OCInitStrue;
   start_flag=1; 
 	start_flagA=1; 
 	start_flagB=0;
-	 LCD_Map();
+	LCD_Map();
 	 
-	  	tp_dev.init();       //usmart
+	tp_dev.init();       //usmart
 
 	 
-	 AT24CXX_Init();			//IIC初始化 
+	AT24CXX_Init();			//IIC初始化 
 	 
 	POINT_COLOR=RED;//设置字体为红色 
 
@@ -71,13 +70,13 @@ TIM_OCInitTypeDef TIM_OCInitStrue;
 		{						   
 			switch(key)
 			{				 
-				case WKUP_PRES:	//提高转速
+				case WKUP_PRES:	//提高转速 加2圈每秒
 					sptr->SetPoint = sptr->SetPoint + 334/25;           //设定目标Desired Value     
 					break;
 				case KEY2_PRES:	//逆时针
 					anticlockwise();
 					break;
-				case KEY1_PRES:	//降低转速 
+				case KEY1_PRES:	//降低转速 减1圈每秒
 					sptr->SetPoint = sptr->SetPoint - 334/50 ;
 					break;
 				case KEY0_PRES: //顺时针
@@ -118,13 +117,12 @@ void clockwise()				////顺时针
 	}
 }
 
- void LCD_Map(void)
+ void LCD_Map(void)			//LCD显示
  {
 	 double P = 0;
 	 double I = 0;
 	 double D = 0;
 	 int SetCNumber = 0;
-	 int TrueCNumber = 0;
 	 u8 i = 0;
 	 static u8 time = 0;
 	 u16 widthi = 240;
@@ -168,16 +166,6 @@ void clockwise()				////顺时针
 		LCD_ShowxNum(150,420,SetCNumber,2,24,0);
 		
 		LCD_ShowString(20,460,200,16,24,"Cur speed:");
-		if(start_flagA==1)
-		{
-			TrueCNumber = compareA*50/334;
-			LCD_ShowxNum(150,460,TrueCNumber,2,24,0);
-		}
-		if(start_flagB==1)
-		{
-			TrueCNumber = compareB*50/334;
-			LCD_ShowxNum(150,460,TrueCNumber,2,24,0);
-		}
 		
 		LCD_ShowString(20,500,200,24,24,"P:");
 		LCD_ShowString(20,540,200,24,24,"I:");
@@ -254,7 +242,7 @@ void clockwise()				////顺时针
  }
 
  //定时器3中断服务程序
-void TIM3_IRQHandler(void)   //TIM3中断
+void TIM3_IRQHandler(void)   //TIM3中断      进行PID运算
 {
 		uint32_t count;
 		double cycleNumber2 = 0;
@@ -277,11 +265,10 @@ void TIM3_IRQHandler(void)   //TIM3中断
       compareB=LocPIDCalc(count);      
 			
       if(compareB>899)compareB=899;  
-      if(compareB<1)compareB=1;
-      cal=sptr->SetPoint;
-			cycleNumber1 = (cal*50)/334;
+      if(compareB<1)compareB=0;
       cal=count;
-			cycleNumber2 = (cal*50)/334;
+			cycleNumber2 = (cal*50)/334;		//更新实时速度
+			LCD_ShowxNum(150,460,cycleNumber2,2,24,0);
 			TIM_SetCompare1(TIM1,compareB);	
 			if(x<460)	
 			{
@@ -325,10 +312,9 @@ void TIM3_IRQHandler(void)   //TIM3中断
 			
       if(compareA>899)compareA=899;  
       if(compareA<1)compareA=0;
-      cal=sptr->SetPoint;
-			cycleNumber1 = (cal*50)/334;
       cal=count;
 			cycleNumber2 = (cal*50)/334;
+			LCD_ShowxNum(150,460,cycleNumber2,2,24,0);
 			TIM_SetCompare1(TIM8,compareA);	
 			if(x<460)	
 			{
@@ -363,8 +349,6 @@ void TIM3_IRQHandler(void)   //TIM3中断
 		time_count++;         // 每20ms自动增一
     if(time_count==200)
     {	      
-				printf("\r\n CaptureNumberA :%d \r\n",CaptureNumberA);
-				printf("\r\n CaptureNumberA :%d \r\n",CaptureNumberB);
 				printf("\r\n compareB :%d \r\n",compareB);
 				printf("\r\n compareA :%d \r\n",compareA);
       time_count=0;      

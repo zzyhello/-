@@ -18,7 +18,7 @@ void TIM1_PWM_Init(u16 arr,u16 psc)
 	GPIO_InitStructure.GPIO_Pin = GPIO_Pin_8;				 //PA.8 端口配置
   GPIO_InitStructure.GPIO_Mode = GPIO_Mode_AF_PP; 		 
   GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;		 //IO口速度为50MHz
-  GPIO_Init(GPIOA, &GPIO_InitStructure);					 //根据设定参数初始化GPIOB.5
+  GPIO_Init(GPIOA, &GPIO_InitStructure);					 
 
 	//定时器TIM1初始化
 	TIM_TimeBaseStructure.TIM_Period = arr; //设置在下一个更新事件装入活动的自动重装载寄存器周期的值	

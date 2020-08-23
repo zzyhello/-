@@ -241,7 +241,6 @@ void ChangeParameter(double Num)
 		}
 		SetPNum(Num,(i-Lcount));
 		printf("P_DATA:%f\r\n",sptr->Proportion);
-		printf("P_DATA:%f\r\n",P_DATA);
 		CurPFlag = 0;
 	}
 	else if(CurIFlag == 1)
@@ -257,7 +256,6 @@ void ChangeParameter(double Num)
 		}
 		SetINum(Num,(i-Lcount));
 		printf("I_DATA:%f\r\n",sptr->Integral);
-		printf("I_DATA:%f\r\n",I_DATA);
 		CurIFlag = 0;
 	}
 	else if(CurDFlag == 1)
@@ -273,7 +271,6 @@ void ChangeParameter(double Num)
 		}
 		SetDNum(Num,(i-Lcount));
 		printf("D_DATA:%f\r\n",sptr->Derivative);
-		printf("D_DATA:%f\r\n",D_DATA);
 		CurDFlag = 0;
 	}
 }
@@ -306,13 +303,11 @@ void SetParameter(int parameter)
 					if(count == 0)
 					{
 						PatameterNum = ((double)parameter)/10 + PatameterNum;
-						printf("PatameterNum:%f",PatameterNum);
 						count++;
 					}
 					else if(count == 1)
 					{
 						PatameterNum = ((double)parameter)/100 + PatameterNum;
-						printf("PatameterNum:%f",PatameterNum);
 						count = 0;
 					}
 				}
@@ -351,12 +346,10 @@ void SetParameter(int parameter)
 						else if((i-Lcount)==1)
 						{
 							PatameterNum = PatameterNum - PNum[i]*0.1;
-							printf("PatameterNum:%f\r\n",PatameterNum);
 						}
 						else if((i-Lcount)==2)
 						{
 							PatameterNum = PatameterNum - PNum[i]*0.01;
-							printf("PatameterNum:%f\r\n",PatameterNum);
 						}
 					}
 					else if(LFlag==0)
