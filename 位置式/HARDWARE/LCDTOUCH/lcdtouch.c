@@ -107,7 +107,7 @@ void lcd_draw_bline(u16 x1, u16 y1, u16 x2, u16 y2,u8 size,u16 color)
 	}  
 }   
 
-int NumScan(u16 x,u16 y)
+int NumScan(u16 x,u16 y)				//被选中的将有红色方框提示
 {
 		if(x>220&&x<275&&y>275&&y<515)
 		{
@@ -218,7 +218,7 @@ int NumScan(u16 x,u16 y)
 		}
 		return 100;
 }
-void ChangeParameter(double Num)
+void ChangeParameter(double Num)			//根据输入的数对选中的参数进行修改
 {
 	int CurSpeedCom = 0;
 	if(SetSpeedFlag == 1)
@@ -274,7 +274,7 @@ void ChangeParameter(double Num)
 		CurDFlag = 0;
 	}
 }
-void SetParameter(int parameter)
+void SetParameter(int parameter)				//修改数值，或控制方向
 {
 	
 	static u8 time = 0;
@@ -313,11 +313,11 @@ void SetParameter(int parameter)
 				}
 			}
 		}
-		if(parameter == 10)       //lift
+		if(parameter == 10)       //逆时针
 		{
 			anticlockwise();
 		}
-		if(parameter == 11)       //rignt
+		if(parameter == 11)       //顺时针
 		{
 			clockwise();
 		}
@@ -415,7 +415,7 @@ void ctp_test(void)
 				//	lcd_draw_bline(lastpos[t][0],lastpos[t][1],tp_dev.x[t],tp_dev.y[t],2,POINT_COLOR_TBL[t]);//画线
 					lastpos[t][0]=tp_dev.x[t];
 					lastpos[t][1]=tp_dev.y[t];
-					if(tp_dev.x[t]>(lcddev.width-24)&&tp_dev.y[t]<16)
+					if(tp_dev.x[t]>(lcddev.width-24)&&tp_dev.y[t]<16)				//点右上角清屏
 					{
 						Load_Drow_Dialog();//清除
 					}

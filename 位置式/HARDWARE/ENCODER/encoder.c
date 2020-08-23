@@ -103,7 +103,7 @@ void TIM4_Cap_InitA(u16 arr,u16 psc)
 u8  TIM5CH1_CAPTURE_STA=0;	//输入捕获状态		    				
 u16	TIM5CH1_CAPTURE_VAL;	//输入捕获值
  
-//定时器5中断服务程序	 
+//定时器5中断服务程序	 用来捕获上升沿
 void TIM5_IRQHandler(void)
 { 
 	if (TIM_GetITStatus(TIM5, TIM_IT_CC2) != RESET)//捕获1发生捕获事件

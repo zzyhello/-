@@ -5,7 +5,7 @@
 //这里时钟选择为APB1的2倍，而APB1为36M
 //arr：自动重装值。
 //psc：时钟预分频数
-//这里使用的是定时器1   PA.8
+//这里使用的是定时器1   PA.8   输出PWM
 
 void TIM1_PWM_Init(u16 arr,u16 psc)
 {
@@ -40,7 +40,7 @@ void TIM1_PWM_Init(u16 arr,u16 psc)
 	TIM_Cmd(TIM1,ENABLE);
 }
 
-//这里使用的是定时器8     PC6
+//这里使用的是定时器8   PC6  输出PWM
 
 void TIM8_PWM_Init(u16 arr,u16 psc)
 {
